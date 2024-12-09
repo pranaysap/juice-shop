@@ -1,5 +1,5 @@
 name: 'SCS Actions'
-description: 'Github action to generate SBOM, SLSA'
+description: 'Github action to generate SBOM, SLSA and attestation'
 author: 'Pranay'
 inputs:
   dummy_ACCOUNT_URL:
