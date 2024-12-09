@@ -35,21 +35,10 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'dummy/scs-plugin:github'
-  entrypoint: '/bin/scs-plugin'
+  image: 'dummy/scsa-plugin:github'
+  entrypoint: '/bin/scsa-plugin'
   args: 
    - github-orchestrate
   env:
     ACTION_NAME: 'SBOM Generation'
     dummy_ACCOUNT_URL: ${{ inputs.dummy_ACCOUNT_URL }}
-    dummy_ACCOUNT_ID: ${{ inputs.dummy_ACCOUNT_ID }}
-    dummy_ORG_ID: ${{ inputs.dummy_ORG_ID }}
-    dummy_PROJECT_ID: ${{ inputs.dummy_PROJECT_ID }}
-    dummy_API_KEY: ${{ inputs.dummy_API_KEY }}
-    SBOM_TOOL: ${{ inputs.TOOL }}
-    SBOM_FORMAT: ${{ inputs.FORMAT }}
-    SBOM_SOURCE: ${{ inputs.TARGET }}
-    PLUGIN_TYPE: 'github-orchestrate'
-    PLUGIN_MODE: 'generation'
-    ATTEST_SBOM: ${{ inputs.ATTEST }}
-    KMS_KEY: ${{ inputs.KMS_KEY }}
