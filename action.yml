@@ -1,4 +1,4 @@
-name: 'SCS Actions'
+name: 'SCSA Actions'
 description: 'Github action to generate SBOM, SLSA and attestation'
 author: 'Pranay'
 inputs:
